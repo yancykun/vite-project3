@@ -1,0 +1,193 @@
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+:root {
+  --Tomato:hsl(4, 100%, 67%) ;
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+
+  --font-weight-semi-bold: 400;
+  --font-weight-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, serif;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+body {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  background: var(--Dark-Slate-Grey);
+  min-height: 100vh;
+  margin: auto;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  gap: 2rem;
+  background: var(--White);
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 3rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.left {
+  width: 55%;
+} 
+
+.right {
+  width: 45%;
+}
+
+.left h1 {
+  font-weight: var(--font-weight-bold);
+  color: var(--Dark-Slate-Grey);
+  font-size: 3rem;
+}
+
+.left p {
+  padding: 1rem 0;
+}
+
+.left ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.left ul li{
+  list-style: none;
+  padding: .5rem;
+  list-style-image: url(assets/images/icon-list.svg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.75rem;
+}
+
+form label {
+  font-size: .875rem;
+  color: var(--Dark-Slate-Grey);
+  font-weight: var(--font-weight-bold);
+}
+
+form input {
+  height: 4rem;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+  border: 1px solid var(--Grey);
+  padding: 1rem 1.3rem;
+  margin: .5rem 0 1.2rem 0;
+}
+
+form button {
+  background: var(--Dark-Slate-Grey);
+  color: var(--White);
+  height: 4rem;
+  border: none;
+  border-radius: .5rem;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 1.2rem;
+}
+
+
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  background: var(--White);
+  width: 450px;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.icon-card-2 {
+  width: 60px;
+  padding-bottom: 2.5rem;
+}
+
+.card-2 h1 {
+  font-size: 3.25rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--Dark-Slate-Grey);
+}
+
+.card-2 p {
+  padding: 2.5rem 0;
+}
+
+.card-2 p span {
+  font-weight: bold;
+}
+
+.card-2 button {
+  background: var(--Dark-Slate-Grey);
+  color: var(--White);
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+    justify-content: center; 
+    width: 90%;
+    padding: 0;
+  }
+
+  .right {
+    width: 100%;
+  }
+  
+  .left {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  form {
+    padding-bottom: 2.5rem;
+
+  }
+}
